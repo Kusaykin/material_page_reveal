@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final pages = [
+final List<PageViewModel> pages = [
   new PageViewModel(
       const Color(0xFF678FB4),
       'assets/hotels.png',
@@ -83,8 +83,8 @@ class PageViewModel {
   final String heroAssetPath;
   final String title;
   final String body;
-  final String icon;
+  final String iconAssetPath;
 
   PageViewModel(
-      this.color, this.heroAssetPath, this.title, this.body, this.icon);
+      this.color, this.heroAssetPath, this.title, this.body, this.iconAssetPath);
 }
